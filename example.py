@@ -5,6 +5,6 @@ watcher = FSWatcher()
 
 @watcher.on_any("README.md")
 async def say_hello(event: FileSystemEvent):
-    print("Created README file.")
+    print("Modified README file.")
 
 watcher.watch()
